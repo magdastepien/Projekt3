@@ -1,0 +1,19 @@
+TestForm:
+    
+<TestForm>:
+    orientation: "vertical"
+    my_map: map
+    BoxLayout:
+        height: "40dp"
+        size_hint_y: None
+        Button:
+            size_hint_x: 25
+            text: "Licz"
+            on_press: root.analyse_file()
+    BoxLayout:
+        orientation: 'vertical'
+        MapView:
+            lat: 0
+            lon: 0
+            zoom: 1
+            id: map
